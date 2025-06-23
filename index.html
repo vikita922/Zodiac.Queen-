@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Horoscope Mirror</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>✨ Horoscope Mirror ✨</h1>
+
+    <label for="zodiac">Choose your zodiac sign:</label><br/>
+    <select id="zodiac">
+      <option value="">-- Select --</option>
+      <option value="aries">♈ Aries</option>
+      <option value="taurus">♉ Taurus</option>
+      <option value="gemini">♊ Gemini</option>
+      <option value="cancer">♋ Cancer</option>
+      <option value="leo">♌ Leo</option>
+      <option value="virgo">♍ Virgo</option>
+      <option value="libra">♎ Libra</option>
+      <option value="scorpio">♏ Scorpio</option>
+      <option value="sagittarius">♐ Sagittarius</option>
+      <option value="capricorn">♑ Capricorn</option>
+      <option value="aquarius">♒ Aquarius</option>
+      <option value="pisces">♓ Pisces</option>
+    </select>
+
+    <div id="modeSelector">
+      <label><input type="radio" name="mode" value="poetic" checked /> Poetic</label>
+      <label><input type="radio" name="mode" value="funny" /> Funny</label>
+    </div>
+
+    <button id="seeMirror">Reveal Mirror</button>
+    <button id="shareBtn">📤 Share</button>
+
+    <div class="result" id="mirrorText"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
